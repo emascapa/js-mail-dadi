@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Title</title>
+    <title>jsMailDice</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -49,30 +49,31 @@
 
             <span class="text-white lead d-block mb-3">Cliccando il bottone sottostante veranno lanciati due dadi, uno per te e uno per il computer. Vince il numero più alto ;)</span>
             <button type="button" class="btn btn-light" id="dice_generator">Lancia i dadi <i class="fa-solid fa-dice"></i></button>
-            <div class="row mt-4 dice_div text-white gy-3">
-                <div class="col-6">
-                    <div class="bg-dark border border-3 rounded rounded-4">
-                        <h4 class="text-center py-3">Il tuo numero</h4>
-                        <div id="user_dice" class="display-1 text-center pb-3">
-                            <i class="fa-solid fa-dice"></i>
-                        </div>
-                    </div>    
-                </div>
-                <div class="col-6">
-                    <div class="bg-dark border border-3 rounded rounded-4">
-                        <h4 class="text-center py-3">Il numero del pc</h4>
-                        <div id="pc_dice" class="display-1 text-center pb-3">
-                            <i class="fa-solid fa-dice-two"></i>
-                        </div>
-                    </div>  
-                </div>
-                <div class="col-12">
-                    <div class="bg-dark border border-3 rounded rounded-4">
-                        <h4 class="text-center py-3" id="game_result">Il numero del pc</h4>
-   
-                    </div> 
+            <div id="dice_div">
+                <div class="row mt-4 text-white gy-3">
+                    <div class="col-6">
+                        <div class="bg-dark border border-3 rounded rounded-4">
+                            <h4 class="text-center py-3">Il tuo numero</h4>
+                            <div id="user_dice" class="display-1 text-center pb-3">
+                                <i class="fa-solid fa-dice"></i>
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="col-6">
+                        <div class="bg-dark border border-3 rounded rounded-4">
+                            <h4 class="text-center py-3">Il numero del pc</h4>
+                            <div id="pc_dice" class="display-1 text-center pb-3">
+                                <i class="fa-solid fa-dice-two"></i>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="col-12">
+                        <div class="border border-3 rounded rounded-4"  id="game_result">   
+                        </div> 
+                    </div>
                 </div>
             </div>
+
 
 
             
