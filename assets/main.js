@@ -10,6 +10,7 @@ const validMails = [
 //variabile bottone submit
 const mailChecker = document.getElementById('mail_checker');
 
+//variabile div in cui andrò a far comparire il messaggio
 const rowReturn = document.getElementById('row_message');
 
 //funzione bottone submit al click
@@ -50,6 +51,23 @@ mailChecker.addEventListener('click', function () {
         }
 
     }
+})
+
+
+//pulsante dadi in variabile
+const diceGenerator = document.getElementById('dice_generator');
+
+//div in cui andrò a visualizzare i dadi
+const userDice = document.getElementById('user_dicer');
+const pcDice = document.getElementById('pc_dicer');
+
+const gameResult = document.getElementById('game_result');
+
+//azione al click del bottone
+diceGenerator.addEventListener('click',function() {
+    //numero casuale utente
+    const randomUserNumber = Math.floor((Math.random() * 6) + 1);
+    
 })
 
 
