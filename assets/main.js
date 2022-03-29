@@ -30,8 +30,9 @@ mailChecker.addEventListener('click', function () {
                 </div>
                 `;
 
-                rowReturn.insertAdjacentHTML('beforeend', successMessage);
-                
+                rowReturn.innerHTML = successMessage;
+                //rowReturn.insertAdjacentHTML('beforeend', successMessage);
+
                 //quindi interrompo il ciclo 
                 break;
             }
@@ -44,7 +45,7 @@ mailChecker.addEventListener('click', function () {
                 </div>
                 `;
 
-            rowReturn.insertAdjacentHTML('beforeend', successMessage);
+                rowReturn.innerHTML = successMessage;
 
         }
 
