@@ -118,13 +118,13 @@ diceGenerator.addEventListener('click', function () {
 
     //risultato del gioco
     if (randomUserNumber === randomPcNumber) {
-        gameResult.innerHTML = `<h4 class="text-center py-3">Pareggione!</h4>`;
+        gameResult.innerHTML = `<h4 class="text-center py-3  m-0">Pareggione!</h4>`;
         gameResult.classList.add('bg-warning');
     } else if (randomUserNumber > randomPcNumber) {
-        gameResult.innerHTML = `<h4 class="text-center py-3">Hai vinto tu!</h4>`;
+        gameResult.innerHTML = `<h4 class="text-center py-3  m-0">Hai vinto tu!</h4>`;
         gameResult.classList.add('bg-success');
     } else {
-        gameResult.innerHTML = `<h4 class="text-center py-3">Ha vinto il pc sry</h4>`;
+        gameResult.innerHTML = `<h4 class="text-center py-3  m-0">Ha vinto il pc sry</h4>`;
         gameResult.classList.add('bg-danger');
     }
 
